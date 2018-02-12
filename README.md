@@ -1,1 +1,3 @@
 # Sleeping-TA-problem
+This project provides a solution to the sleeping teaching assistant problem. This problem involves a T.A (teaching assistant) who assists students one by one in his office. The students sit on chairs outside the office and wait for their turn. The TA only caters to one student at a time and hence there must be proper synchronization amongst the students. There are multiple critical sections here which need to be taken care of.
+The solution to this situation involves the use of POSIX threads, semaphores and mutex. Students and T.A are created using POSIX threads while the T. A’s office and student entering in are mutex locks. The process of students waiting for their turn is synchronized using semaphores.
